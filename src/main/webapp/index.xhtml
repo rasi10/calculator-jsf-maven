@@ -5,12 +5,31 @@
     <h:head>
         <title>Calculator</title>
     </h:head>
-    <h:body>        
+    <h:body>     
+        <p><h3>Calculator</h3></p>
         <h:form> 
-            <h:inputText  value="#{basic.firstNumber}"/><br/>
-            <h:inputText value="#{basic.secondNumber}"/><br/>
-            <h:commandButton value="add" action="#{basic.add()}"/>  
-            <h:outputLabel value="#{basic.result}"/><br/><br/>
+            <p>
+                <label>First number:</label><br/>
+                <h:inputText  value="#{basic.firstNumber}"/>
+            </p>            
+            <p>
+                <label>Second number:</label><br/>
+                <h:inputText value="#{basic.secondNumber}"/>
+            </p>      
+            
+            <p>
+                <h:commandButton value="C" action="#{basic.clear()}"/>
+            </p>
+            <p>
+                <h:commandButton value="+" action="#{basic.add()}"/>
+                <h:commandButton value="-" action="#{basic.subtract()}"/>
+                <h:commandButton value="*" action="#{basic.multiply()}"/>
+                <h:commandButton value="/" action="#{basic.divide()}"/>                
+            </p>    
+            
+            <p>
+                Result: <h:outputLabel value="#{basic.result}"/><br/><br/>
+            </p>
         </h:form> 
     </h:body>
 </html>

@@ -42,6 +42,33 @@ public class Basic {
            setResult(String.valueOf(result));      
         
     }
+    public void subtract(){
+           double number1 = Double.parseDouble(firstNumber);
+           double number2 = Double.parseDouble(secondNumber);
+           double result = number1 - number2;           
+           setResult(String.valueOf(result));      
+        
+    }
+    
+    public void multiply(){
+           double number1 = Double.parseDouble(firstNumber);
+           double number2 = Double.parseDouble(secondNumber);
+           double result = number1 * number2;           
+           setResult(String.valueOf(result));     
+        
+    }
    
+    public void divide(){
+           double number1 = Double.parseDouble(firstNumber);
+           double number2 = Double.parseDouble(secondNumber);
+           double result = number1 / number2;           
+           setResult(String.valueOf(result)); 
+    }
+    
+    public void clear(){
+           setFirstNumber("");
+           setSecondNumber("");
+           setResult(""); 
+    }
    
 }
